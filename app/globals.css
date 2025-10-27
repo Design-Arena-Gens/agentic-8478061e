@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  @apply bg-jasmine text-slate-900 font-body antialiased;
+}
+
+a {
+  @apply text-cardamom transition-colors duration-200;
+}
+
+a:hover {
+  @apply text-saffron;
+}
+
+.card-gradient {
+  background: linear-gradient(135deg, rgba(255, 127, 80, 0.12), rgba(255, 215, 0, 0.12));
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(18px);
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
